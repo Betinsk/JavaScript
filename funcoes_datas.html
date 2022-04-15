@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JavaScript</title>
+
+	<script type="text/javascript">
+		
+		// var data = new Date()
+
+
+		//15/01/2017
+		var data1 = new Date(2017, 0, 15)
+
+		//23/02/2017
+		var data2 = new Date(2017, 1, 23)
+
+		var milissegundos_entre_datas = Math.abs(data1.getTime() - data2.getTime())
+		var milissegundos_por_dia = (1*24*60*60*1000)
+
+		document.write(data1.toString())	
+		document.write('<hr>')
+		document.write(data2.toString())	
+
+		//Converter datas para algo que possoamos calcular
+		document.write('<hr>')
+		document.write(data1.getTime())	
+		document.write('<hr>')
+		document.write(data2.getTime())
+			document.write('<hr>')
+		//encontrar a qtde de milessegundos entre data1 e data2
+		document.write(Math.abs(data1.getTime() - data2.getTime()))
+
+		//1 dia tem 24 horas, e cada hora tem 60 minutos, cada minuto tem 60 segundos e cada segundo tem 1000 milessegundos
+		//Então quantos milessegundos existem em um dia?
+			document.write('<hr>')
+		document.write(' 1 dia tem: '+ (1*24*60*60*1000)+ ' milessegundos')
+	document.write('<hr>')
+		document.write(Math.ceil(milissegundos_entre_datas / milissegundos_por_dia))
+
+
+
+
+		//document.write(data.getDate()+ '/'+ data.getMonth()+'/'+ data.getFullYear())	
+		
+		
+		//adicionar / remover dias
+
+		/*document.write(data.toString())
+		data.setDate(data.getDate() + 720)
+		document.write('<br /><hr>')
+		document.write(data.toString())
+
+		document.write(data.toString())
+		data.setDate(data.getFullYear() + 1)
+		document.write('<br /><br/><hr>')
+		document.write(data.toString())
+		*/
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>
