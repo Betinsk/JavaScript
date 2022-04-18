@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>AtividadeDom</title>
+
+
+	<style type="text/css">
+		
+	
+
+	</style>
+
+	<script type="text/javascript">
+		
+		function modificandoBackground(color) {
+			document.getElementById('in').style.backgroundColor = color
+
+		}
+
+			function acao() {
+			var caracter = document.getElementById('in').value
+			console.log(caracter)
+			if(caracter.length < 3) {
+				document.getElementById('in').style.backgroundColor = 'red'
+			}
+
+			else {
+				document.getElementById('in').style.backgroundColor = 'green'
+			}
+			
+		}
+
+
+
+	</script>
+</head>
+<body>
+
+	<input type="text" id="in" onfocus="modificandoBackground('#FFFF00')" onblur ="acao()">
+
+</body>
+</html>
