@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Atividade Array</title>
+
+</head>
+<body>
+
+
+	<input id="inp" type="text" name="" >
+	<button type="button" onclick="captura()">Adicionar</button>
+	<button type="button" onclick="ordernar()">Ordernar</button>
+
+		<script type="text/javascript">
+		
+		var objetos = Array('Cadeira', 'Impressora', 'Garfo')
+
+
+		function ordernar() {
+			objetos.sort()
+			console.log(objetos)
+		}
+
+
+		function captura(){
+		var recupera = document.getElementById('inp').value
+
+			if(recupera == '') {
+			alert('Digite um valor')
+		}
+
+		var auxiliar = objetos.indexOf(recupera) 
+		console.log(auxiliar)
+
+		if(auxiliar >=0 ) {
+			alert('Objeto já foi adicionado!')
+		}
+
+
+		else {
+			objetos.push(recupera)
+			console.log(objetos)
+		}
+
+		document.getElementById('inp').value = ''
+ }
+
+
+	</script>
+</body>
+</html>
