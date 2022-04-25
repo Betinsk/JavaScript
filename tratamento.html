@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tratamentos</title>
+
+	<script type="text/javascript">
+
+
+		//netFlix
+		var video = Array() 
+
+		video[1] = Array()
+		video[1]['nome']= 'Fullmetal Alchemist' 
+		video[1]['Categoria']= 'Anime' 
+	
+		function getVideo(video) {
+
+			try {
+
+			console.log(video[0]['nome'])
+
+			} catch(e) {
+				console.log(e)
+				console.log('Essevideo não está sendo disponivel')
+						throw new Error('Houve um erro inexperado, estamos trabalhando nisso agora')
+
+			}
+
+ 
+
+
+
+			finally {
+				console.log('Sempre passa por aqui')
+			}
+
+
+			console.log('A aplicação não morreu')
+
+		}
+
+			function tratarErro(e) {
+				console.log(e)
+			}
+
+
+
+		getVideo(video)
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>
